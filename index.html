@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Cálculo de IMC</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+<form>
+    <div class="d-flex justify-content-center">
+        <div class="card">
+            <div class="card-body">
+                <div class="titulo">
+                    <h2><span class="badge badge-secondary">Cálculo de IMC</span></h2>
+                </div>
+                <!-- Altura -->
+                <div class="form-group row">
+                        <label class="col-sm-10 col-form-label">Altura em Centímetros(cm):</label>
+                            <div class="col-sm-10">
+                                <input class="form-control" required type="number" id="altura" placeholder="Exemplo: 170">
+                                    
+                            </div>
+
+                </div>
+                <!-- Peso -->
+                <div class="form-group row">
+                    <label class="col-sm-10 col-form-label">Peso em Quilos(Kg):</label>
+                        <div class="col-sm-10">
+                            <input class="form-control"  required type="number" id="peso" placeholder="Exemplo: 60">
+                        </div>
+                </div>
+                <div class="center-result">
+                    <!-- Calcular -->
+
+                    <button id="calcular" type="button" class="btn btn-success">Calcular o IMC</button>
+                     <button id="buttonreset" type="reset" class="btn btn-primary">Preencher novamente</button>
+                    <br>
+                </div>
+                    <!-- Resultado do IMC -->
+                    <h4><span class="badge badge-light" id="res"></span></h4>
+                    <!-- Descrição -->
+                <div class="center-result">
+                        <h5 id="abstract"></h5>
+                </div>
+                        <div class="center-result">
+                        <i><h6 id="description"></h6></i>
+                        </div>
+
+                    <div>
+                    <div class="center-result">
+                    <h2><span class="badge badge-light" ></span></h2>
+                </div>
+            </div>
+        </div>
+</form>
+<script src="./calculo.js"></script>
+
+</body>
+
+</html>

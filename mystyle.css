@@ -1,0 +1,69 @@
+body {
+    background-color: grey;
+}
+.card {
+    width: auto;
+}
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.center-result{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card {
+    margin-top: 150px;
+    border-radius: 10px;
+    padding: 15px;
+    width: auto;
+}
+.badge-secondary {
+    color: white;
+    text-shadow: 0.5px 0.5px 1.5px #363636;
+    background-color: #8EE000;
+}
+.badge-light {
+    margin-top: 30px;
+    color: white;
+    text-shadow: 0.5px 0.5px 1.5px #363636;
+    background-color: #8EE000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-primary{
+    text-shadow: 0.5px 0.5px 1.5px #363636;
+    background-color: #ff9100;
+    border: #ff9100;
+}
+.btn-primary:hover{
+    background-color: #a05b01;
+    border: #a05b01;
+}
+.btn-success{
+    text-shadow: 0.5px 0.5px 1.5px #363636;
+    background-color: #8EE000;
+    border: #8EE000;
+    /* margin-right: 10px; */
+}
+.btn-success:hover{
+    background-color: #67a300;
+}
+
+.form-group {
+    width: 300px;
+}
+.form-control {
+    width: 300px;
+}
+.h2{
+    margin-left: 50px;
+}
